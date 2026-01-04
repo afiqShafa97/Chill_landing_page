@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masuk</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div><img src="Chill logo.png" alt="chill logo"></div>
-    <h1>Masuk</h1>
-    <h3>Selamat datang kembali</h3>
-    <h2>Username</h2>
-    <h3>Masukkan username</h3>
-    <h2>Kata Sandi</h2>
-    <h3>Masukkan kata sandi</h3>
-    <h3><span>Belum punya akun? Daftar</span><span>Lupa kata sandi?</span></h3>
 
-    <div>Masuk</div>
-    <div>Atau</div>
-    <div>Masuk dengan Google</div>
+    <div class="login-card">
+        <img src="./assets/images/Chill logo.png" alt="Chill Logo" class="gambar-logo">
+
+        <h1>Masuk</h1>
+        <p>Selamat datang kembali</p>
+
+        <form>
+            <label for="username">Username</label>
+            <input id="username" type="text" placeholder="Masukkan username" required>
+
+            <label for="password">Kata Sandi</label>
+            <input id="password" type="password" placeholder="Masukkan kata sandi" required>
+
+            <div class="links">
+                <span>Belum punya akun? </span><a href="./register.html">Daftar</a>
+                <p>Lupa kata sandi?</p>
+            </div>
+
+            <button type="submit">Masuk</button>
+        </form>
+        <p>Atau</p>
+        <span><img src="./assets/images/google_btn.png" alt="googlebtn"></span><button class="google-btn">Masuk dengan Google</button>
+    </div>
+
 </body>
 </html>
