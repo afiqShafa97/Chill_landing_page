@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Masuk</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="login-bg">
     <div class="login-card">
-        <img src="./assets/images/Chill logo.png" alt="Chill Logo" class="gambar-logo">
+      <img
+        src="./assets/svg/chill-logo.svg"
+        alt="Chill Logo"
+        class="gambar-logo"
+      />
 
-        <h1>Masuk</h1>
-        <p>Selamat datang kembali</p>
+      <h1>Masuk</h1>
+      <p>Selamat datang kembali</p>
 
-        <form>
-            <label for="username">Username</label>
-            <input id="username" type="text" placeholder="Masukkan username" required>
+      <form>
+        <label for="username">Username</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Masukkan username"
+          required
+        />
 
-            <label for="password">Kata Sandi</label>
-            <input id="password" type="password" placeholder="Masukkan kata sandi" required>
+        <label for="password">Kata Sandi</label>
+        <div class="password-wrapper">
+          <input
+            id="password"
+            type="password"
+            placeholder="Masukkan kata sandi"
+            required
+          />
+          <img
+            src="./assets/svg/eye-off.svg"
+            alt="Hide Password"
+            class="eye-icon"
+          />
+        </div>
 
-            <div class="links">
-                <span>Belum punya akun? </span><a href="./register.html">Daftar</a>
-                <p>Lupa kata sandi?</p>
-            </div>
+        <div class="links">
+          <span>Belum punya akun? </span><a href="./register.html">Daftar</a>
+          <p>Lupa kata sandi?</p>
+        </div>
 
-            <button type="submit">Masuk</button>
-        </form>
-        <p>Atau</p>
-        <span><img src="./assets/images/google_btn.png" alt="googlebtn"></span><button class="google-btn">Masuk dengan Google</button>
+        <button type="submit">Masuk</button>
+      </form>
+
+      <p class="divider">Atau</p>
+
+      <button class="google-btn">
+        <img src="./assets/svg/google.svg" alt="Google" />
+        Masuk dengan Google
+      </button>
     </div>
-
-</body>
+  </body>
 </html>
