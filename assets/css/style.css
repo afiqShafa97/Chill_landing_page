@@ -1,4 +1,4 @@
-
+/* buat login.html dan register.html */
 
 .login-bg {
   min-height: 100vh;
@@ -9,8 +9,17 @@
   font-family: "Lato", sans-serif;
 }
 
+.register-bg {
+  min-height: 100vh;
+  background: url("../images/bg_register.avif") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
 .login-card {
-background-color: rgba(24, 26, 28, 0.84);
+  background-color: rgba(24, 26, 28, 0.84);
   width: 360px;
   padding: 40px;
   border-radius: 16px;
@@ -23,7 +32,6 @@ background-color: rgba(24, 26, 28, 0.84);
   margin-bottom: 16px;
 }
 
-/* ===== HEADINGS ===== */
 .login-card h1 {
   margin-bottom: 4px;
   font-size: 24px;
@@ -57,7 +65,6 @@ input {
   box-sizing: border-box;
 }
 
-
 .links {
   display: flex;
   justify-content: space-between;
@@ -80,13 +87,11 @@ input {
 button {
   width: 100%;
   padding: 10px;
-  border: none;
   border-radius: 24px;
   cursor: pointer;
   font-weight: bold;
   font-family: "Lato", sans-serif;
   border: 1px solid rgba(255, 255, 255, 0.3);
-
 }
 
 button[type="submit"] {
