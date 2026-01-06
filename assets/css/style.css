@@ -1,17 +1,16 @@
-/* this is style for login.html index.html and register.html */
-/* ===== BACKGROUND ===== */
+
+
 .login-bg {
   min-height: 100vh;
   background: url("../images/bg_login.jpg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-/* ===== LOGIN CARD ===== */
 .login-card {
-  background: rgba(0, 0, 0, 0.5); /* black with half opacity */
+background-color: rgba(24, 26, 28, 0.84);
   width: 360px;
   padding: 40px;
   border-radius: 16px;
@@ -19,9 +18,8 @@
   text-align: center;
 }
 
-/* ===== LOGO ===== */
 .gambar-logo {
-  width: 90px;
+  width: 140px;
   margin-bottom: 16px;
 }
 
@@ -37,9 +35,9 @@
   color: #dddddd;
 }
 
-/* ===== FORM ===== */
 form {
   text-align: left;
+  font-family: "Lato", sans-serif;
 }
 
 label {
@@ -60,67 +58,67 @@ input {
 }
 
 
-/* ===== LINKS ===== */
 .links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .links a {
-  color: #4da3ff;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .links p {
   margin: 0;
   cursor: pointer;
+  font-size: 12px;
 }
 
-/* ===== BUTTON ===== */
 button {
   width: 100%;
   padding: 10px;
   border: none;
-  border-radius: 6px;
+  border-radius: 24px;
   cursor: pointer;
   font-weight: bold;
+  font-family: "Lato", sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
 }
 
 button[type="submit"] {
-  background-color: #4da3ff;
+  background-color: #3d4142;
   color: #ffffff;
-  margin-bottom: 16px;
+  font-family: "Lato", sans-serif;
 }
 
-/* ===== DIVIDER ===== */
 .divider {
   text-align: center;
-  margin: 16px 0;
-  font-size: 13px;
+  margin: 10px !important;
+  font-size: 12px !important;
+  color: gray !important;
 }
 
-/* ===== GOOGLE BUTTON ===== */
 .google-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: #ffffff;
-  color: #000000;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 24px;
 }
 
 .google-btn img {
   width: 18px;
 }
 
-/* ===== PASSWORD ICON ===== */
 .password-wrapper {
   position: relative;
   width: 100%;
-  margin-bottom: 16px;
 }
 
 .password-wrapper input {
