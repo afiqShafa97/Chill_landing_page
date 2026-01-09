@@ -150,3 +150,177 @@ button[type="submit"] {
 div span {
   color: gray;
 }
+
+
+/* buat beranda.html */
+
+/* =====================
+   BERANDA / HOME
+===================== */
+
+.home-bg {
+  background-color: #0f0f0f;
+  color: white;
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 48px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-logo {
+  width: 100px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.profile-img {
+  width: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: url("../images/hero-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-overlay {
+  padding: 80px 48px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.hero-btn {
+  padding: 10px 24px;
+  border-radius: 24px;
+  border: none;
+  background-color: #ffffff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+  padding: 40px 48px;
+}
+
+.movie-row h2 {
+  margin-bottom: 16px;
+}
+
+/* MOVIE LIST */
+.movie-list {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+}
+
+.movie-card {
+  position: relative;
+  min-width: 180px;
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* HOVER EFFECT */
+.movie-hover {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px;
+  transition: opacity 0.3s ease;
+}
+
+.movie-card:hover .movie-hover {
+  opacity: 1;
+}
+
+.movie-hover h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.movie-hover p {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.movie-hover button {
+  margin-top: 8px;
+  padding: 6px;
+  border-radius: 16px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .content {
+    padding: 24px;
+  }
+
+  .movie-card {
+    min-width: 140px;
+    height: 200px;
+  }
+}
